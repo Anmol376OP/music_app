@@ -1,0 +1,63 @@
+.HomeBox {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 1s;
+}
+.LoginBox{
+  height: 100vh;
+  width: 100vw;
+  /* background: rgba(4,28,44); */
+  background: rgba(0,0,0,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.login-main{
+  min-height: 520px;
+  height: auto;
+  width: 78%;  
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.login-section1{
+  z-index: 10;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  
+  background: rgb(17, 18, 18);
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+.login-section1::after{
+  content: '';
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  
+  /* background-image: radial-gradient(at bottom left,rgb(18, 171, 248) 0%,rgba(21,23,24,255) 50%); */
+  /* background: rgb(44, 188, 236); */
+  background: linear-gradient(to right,red,rgba(21,23,24,255));
+  /* clip-path: polygon(0% 63%, 18% 64%, 32% 81%, 33% 100%, 0% 99%); */
+  filter: blur(120px);
+}
+.login-section2{
+  z-index: 10;
+  flex: 1;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+  background: rgba(30,30,30,255);
+  /* background: rgb(5, 43, 61); */
+}
