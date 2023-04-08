@@ -1,5 +1,5 @@
 import '../styles/App.css'
-import bg from '../assets/background2.png'
+import bg from '../assets/bg35.png'
 
 function homepage({ HandleClick }) {
     return (
